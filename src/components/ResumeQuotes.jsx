@@ -10,8 +10,8 @@ export default class ResumeQuotes extends React.Component {
       return <ResumeQuote key={quote.id} quote={quote} />
     });
     return (
-      <div className="resumeQuotes">
-        {quotes}
+      <div className="section">
+        <div className="sectionBody resumeQuotes">{quotes}</div>
       </div>
     );
   }
@@ -25,7 +25,10 @@ class ResumeQuote extends React.Component {
   render() {
     return (
       <div className="resumeQuote">
-        <i>{this.props.quote.quote}</i>-<b>{this.props.quote.name}</b>
+        <span className="quote">{this.props.quote.quote}</span>-
+        <span className="name">{this.props.quote.name}</span>
+        <span>{this.props.quote.title ? ", " + this.props.quote.title : ""}</span>
+        <span>{this.props.quote.organizationName ? ", " + this.props.quote.organizationName : ""}</span>
       </div>
     );
   }

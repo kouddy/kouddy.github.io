@@ -10,18 +10,90 @@
   }
 
   .resumeBody {
+    .section {
+      padding: 10px 15px;
+      border-bottom: 1px dashed #ccc;
+
+      .sectionTitle {
+        font-size: 1.5em;
+        color: #007ebd;
+      }
+      .sectionBody {
+        padding: 0 10px;
+
+        .subsection {
+          padding: 10px;
+        }
+      }
+    }
+
+    .timeSpan {
+      color: #aaa;
+
+      .from, .to {
+        padding: 0 5px;
+      }
+    }
+
     .resumeQuotes {
       text-align: center;
 
       .resumeQuote {
-        padding-top: 5px;
-
-        i {
+        .quote {
+          font-style: italic;
           padding: 0 5px;
         }
+        .name {
+          padding-left: 5px
+        }
+      }
+    }
 
-        b {
-          padding: 0 5px;
+    .resumeWorkExperiences {
+      .resumeWorkExperience {
+        .header {
+          display: flex;
+          justify-content: space-between;
+
+          .organizationName {
+            font-weight: bold;
+            padding: 0 5px;
+          }
+
+          .title {
+            font-style: italic;
+            padding: 0 5px;
+          }
+        }
+      }
+    }
+    .resumeProjects {
+      .resumeProject {
+        .header {
+          display: flex;
+          justify-content: space-between;
+
+          .name {
+            font-weight: bold;
+            padding: 0 5px;
+
+            a {
+              color: black;
+            }
+          }
+        }
+
+        .body {
+          display: flex;
+
+          .image {
+            width: 40%;
+            max-width: 500px;
+
+            img {
+              width: 100%
+            }
+          }
         }
       }
     }

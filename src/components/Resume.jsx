@@ -36,14 +36,66 @@ export default class Resume extends React.Component {
           {
             id: 1,
             quote: "David works hard",
-            name: "Rashid Khan"
+            name: "Rashid Khan",
+            title: "CEO",
+            organizationName: "Infinidy Corp"
           },
           {
             id: 2,
             quote: "David is very cool",
-            name: "David"
+            name: "David",
+            title: "Manager",
+            organizationName: "Qualcomm Inc."
           }
         ],
+        workExperiences: [
+          {
+            id: 1,
+            organizationName: "Facebook",
+            title: "Software Developer",
+            from: 1450485001344,
+            descriptions: [
+              "Did this",
+              "Did that"
+            ]
+          },
+          {
+            id: 2,
+            organizationName: "Twitter",
+            title: "Software Engineer",
+            from: 1450485001344,
+            to: 1450485101344,
+            descriptions: [
+              "Did this",
+              "Did that"
+            ]
+          }
+        ],
+        projects: [
+          {
+            id: 1,
+            name: "Funny",
+            websiteURL: "http://kouddy.github.com",
+            from: 1450485001344,
+            imageURL: "http://mduan.com/static/img/thumbnail_photomap.png",
+            descriptions: [
+              "did this",
+              "did that"
+            ]
+          },
+          {
+            id: 2,
+            name: "Funny",
+            websiteURL: "http://kouddy.github.com",
+            from: 1450485001344,
+            to: 1450485001344,
+            imageURL: "http://mduan.com/static/img/thumbnail_photomap.png",
+            descriptions: [
+              "did that",
+              "did this"
+            ]
+          }
+        ]
       }
     }
 

@@ -24,9 +24,7 @@ class ContactMethods extends React.Component {
     var contactMethods = this.props.contactMethods.map((contactMethod) => {
       return <ContactMethod key={contactMethod.id} contactMethod={contactMethod} />
     });
-    return(
-      <div className="contactMethods">{contactMethods}</div>
-    );
+    return <div className="contactMethods">{contactMethods}</div>;
   }
 }
 
