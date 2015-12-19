@@ -32,18 +32,18 @@ class ResumeProject extends React.Component {
       <div className="subSection resumeProject">
         <div className="header">
           <div className="name">
-            <a href={this.props.project.websiteURL}>
+            {this.props.project.websiteURL ?
+              <a href={this.props.project.websiteURL}>
               {this.props.project.name}<sup><i className="fa fa-external-link"></i></sup>
-            </a>
+              </a>
+              : this.props.project.name}
           </div>
-          <div className="timeSpan">
-            <span className="from">{moment(this.props.project.from).format('MMM YYYY')}</span>
-            -
-            <span className="to">{this.props.project.to ? moment(this.props.project.to).format('MMM YYYY') : "Present"}</span>
+          <div className="restOfHeader timeSpan">
+            {[moment(this.props.project.from).format('MMM YYYY'), this.props.project.to ? moment(this.props.project.to).format('MMM YYYY') : "Present"].join(" - ")}
           </div>
         </div>
         <div className="body">
-            <div className="image"><img src={this.props.project.imageURL}></img></div>
+            {this.props.project.imageURL ? <div className="image"><img src={this.props.project.imageURL}></img></div> : ""}
             <div>{descriptions.length > 0 ? <ul>{descriptions}</ul> : ""}</div>
         </div>
       </div>

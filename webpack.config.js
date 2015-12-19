@@ -47,8 +47,8 @@ if (TARGET === 'webpack-dev-server' || !TARGET) {
   module.exports = merge(common, {
     entry: PATHS.app + '/app.jsx',
     output: {
-        //publicPath: 'http://localhost:8080/',
-        filename: 'build/bundle.js'
+        path: PATHS.build,
+        filename: 'bundle.js'
     },
     module: {
       loaders: [{

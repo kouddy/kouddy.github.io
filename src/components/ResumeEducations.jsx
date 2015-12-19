@@ -36,13 +36,13 @@ class ResumeEducation extends React.Component {
             <span className="degreeName">{this.props.education.degreeName}</span>
             <span className="institutionName">{this.props.education.institutionName}</span>
           </div>
-          <div className="timeSpan">
-            <span className="from">{moment(this.props.education.from).format('MMM YYYY')}</span>
-            -
-            <span className="to">{this.props.education.to ? moment(this.props.education.to).format('MMM YYYY') : "Present"}</span>
+          <div className="restOfHeader timeSpan">
+            {[moment(this.props.education.from).format('MMM YYYY'), this.props.education.to ? moment(this.props.education.to).format('MMM YYYY') : "Present"].join(" - ")}
           </div>
         </div>
-        {descriptions.length > 0 ? <ul className="descriptions">{descriptions}</ul> : ""}
+        <div className="body">
+          {descriptions.length > 0 ? <ul className="descriptions">{descriptions}</ul> : ""}
+        </div>
       </div>
     );
   }

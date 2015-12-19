@@ -132,7 +132,6 @@
         "name": "JSON Library",
         "from": 1354338000000,
         "to": 1361595600000,
-        "imageURL": "http://mduan.com/static/img/thumbnail_photomap.png",
         "descriptions": [
           "Created a JSON Library for Java with emphasis on ease to use and ability to customize",
           "Users can serialize their Java objects to JSON string with as few as one line by using this JSON Library"
@@ -144,7 +143,6 @@
         "websiteURL": "http://alloy.mit.edu/",
         "from": 1346472000000,
         "to": 1364788800000,
-        "imageURL": "http://mduan.com/static/img/thumbnail_photomap.png",
         "descriptions": [
           "Researched and created new algorithms to draw recurrent hierarchies on Alloy including Sugiyama layout and Circular layout, reduced edge crossing for some graphs to zero"
         ]
@@ -154,7 +152,6 @@
         "name": "RTX",
         "from": 1304222400000,
         "to": 1314763200000,
-        "imageURL": "http://mduan.com/static/img/thumbnail_photomap.png",
         "descriptions": [
           "Developed an operating system in C and Assembly, which has features including memory management, processor management, inter-process communication, and time management"
         ]
@@ -162,9 +159,10 @@
       {
         "id":4,
         "name": "Compiler Course Project Designer with Professor Derek Rayside",
+        "websiteURL": "https://ece.uwaterloo.ca/~drayside/ece351-lab-manual.pdf",
         "from": 1293858000000,
         "to": 1325307600000,
-        "imageURL": "http://mduan.com/static/img/thumbnail_photomap.png",
+        "imageURL": "/static/project_compiler.png",
         "descriptions": [
           "Related different compiler creation techniques learned to create simulator and synthesizer for  a language which is a subset of VHDL using Java, used by over 500 students"
         ]

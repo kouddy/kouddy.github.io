@@ -32,20 +32,23 @@
 
         .subSection {
           padding: 10px;
+
+          .header {
+            .restOfHeader {
+              color:#aaa
+            }
+          }
+
+          .body {}
         }
       }
     }
 
     .timeSpan {
-      color: #aaa;
-
-      .from, .to {
-        padding: 0 5px;
-      }
+      padding: 0 5px;
     }
 
     .location {
-      color: #aaa;
       padding: 0 5px;
     }
 
@@ -66,9 +69,6 @@
     .resumeWorkExperiences {
       .resumeWorkExperience {
         .header {
-          display: flex;
-          justify-content: space-between;
-
           .organizationName {
             font-weight: bold;
             padding: 0 5px;
@@ -85,9 +85,6 @@
     .resumeProjects {
       .resumeProject {
         .header {
-          display: flex;
-          justify-content: space-between;
-
           .name {
             font-weight: bold;
             padding: 0 5px;
@@ -98,6 +95,7 @@
           display: flex;
 
           .image {
+            flex: 0 0 auto;
             width: 40%;
             max-width: 500px;
 
@@ -112,9 +110,6 @@
     .resumeEducations {
       .resumeEducation {
         .header {
-          display: flex;
-          justify-content: space-between;
-
           .degreeName {
             font-weight: bold;
             padding: 0 5px;
