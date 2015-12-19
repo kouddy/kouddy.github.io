@@ -29,7 +29,7 @@ class ResumeProject extends React.Component {
       return <li key={description}>{description}</li>
     });
     return (
-      <div className="resumeProject">
+      <div className="subSection resumeProject">
         <div className="header">
           <div className="name">
             <a href={this.props.project.websiteURL}>

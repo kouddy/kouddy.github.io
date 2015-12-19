@@ -95,6 +95,18 @@ export default class Resume extends React.Component {
               "did this"
             ]
           }
+        ],
+        educations: [
+          {
+            id: 1,
+            degreeName: "Engineering",
+            institutionName: "Waterloo",
+            from: 1450485001344,
+            to: 1450485101344,
+            descriptions: [
+              "GPA: 3.6/4"
+            ]
+          }
         ]
       }
     }

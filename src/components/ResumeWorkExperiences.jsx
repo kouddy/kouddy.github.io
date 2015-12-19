@@ -30,7 +30,7 @@ class ResumeWorkExperience extends React.Component {
     });
 
     return (
-      <div className="resumeWorkExperience">
+      <div className="subSection resumeWorkExperience">
         <div className="header">
           <div>
             <span className="organizationName">{this.props.experience.organizationName}</span>
