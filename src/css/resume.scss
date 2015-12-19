@@ -1,4 +1,8 @@
 .resume {
+  i {
+    padding: 0 5px;
+  }
+
   .resumeHeader {
     text-align: center;
     border-bottom: 1px solid #ddd;
@@ -21,7 +25,7 @@
       .sectionBody {
         padding: 0 10px;
 
-        .subsection {
+        .subSection {
           padding: 10px;
         }
       }
@@ -67,6 +71,7 @@
         }
       }
     }
+
     .resumeProjects {
       .resumeProject {
         .header {
@@ -93,6 +98,24 @@
             img {
               width: 100%
             }
+          }
+        }
+      }
+    }
+
+    .resumeEducations {
+      .resumeEducation {
+        .header {
+          display: flex;
+          justify-content: space-between;
+
+          .degreeName {
+            font-weight: bold;
+            padding: 0 5px;
+          }
+
+          .institutionName {
+            padding: 0 5px;
           }
         }
       }
