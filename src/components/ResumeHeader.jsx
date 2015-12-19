@@ -37,7 +37,7 @@ class ContactMethod extends React.Component {
     return (
       <span className="contactMethod">
         <i className="fa fa-globe"></i>
-        <a href={this.props.contactMethod.value} target="_blank">{this.props.contactMethod.value}</a>
+        <a href={this.props.contactMethod.URL} target="_blank">{this.props.contactMethod.value}</a>
       </span>
     );
   }

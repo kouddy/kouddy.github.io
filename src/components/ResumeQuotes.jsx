@@ -23,12 +23,13 @@ class ResumeQuote extends React.Component {
   };
 
   render() {
+    var restOfQuote = [ this.props.quote.name || null, this.props.quote.title || null , this.props.quote.organizationName || null].filter((v) => v !== null).join(", ");
+
     return (
       <div className="resumeQuote">
-        <span className="quote">{this.props.quote.quote}</span>-
-        <span className="name">{this.props.quote.name}</span>
-        <span>{this.props.quote.title ? ", " + this.props.quote.title : ""}</span>
-        <span>{this.props.quote.organizationName ? ", " + this.props.quote.organizationName : ""}</span>
+        <span className="quote">{this.props.quote.quote}</span>
+        <span>{restOfQuote ? "-" : ""}</span>
+        <span className="restOfQuote">{restOfQuote}</span>
       </div>
     );
   }

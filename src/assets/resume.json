@@ -1,0 +1,187 @@
+{
+  "header": {
+    "name": "Jiantong (David) Gao",
+    "contactMethods": [
+      {
+        "id":1,
+        "type": "CONTACT_METHOD_EMAIL",
+        "value": "jtgao20@gmail.com",
+        "URL": "mailto:jtgao20@gmail.com"
+      },
+      {
+        "id":2,
+        "type": "CONTACT_METHOD_WEBSITE_PERSONAL",
+        "value": "kouddy.github.com",
+        "URL": "http://kouddy.github.com"
+      },
+      {
+        "id":3,
+        "type": "CONTACT_METHOD_WEBSITE_GITHUB",
+        "value": "github.com/kouddy",
+        "URL": "http://www.github.com/kouddy"
+      }
+    ]
+  },
+  "body": {
+    "quotes": [
+      {
+        "id":1,
+        "quote": "David is a quick learner and solved some challenging problems timely.",
+        "title": "CEO",
+        "organizationName": "Infinidy Corp."
+      },
+      {
+        "id":2,
+        "quote": "David had a significant impact on our product, solving issues and designing software that allowed us to improve on our deliverable.",
+        "title": "Manager",
+        "organizationName": "Qualcomm Inc."
+      }
+    ],
+    "workExperiences": [
+      {
+        "id":1,
+        "organizationName": "Ceridian Canada",
+        "title": "Software Developer",
+        "location": "Toronto, ON, Canada",
+        "from": 1374465600000,
+        "to": 1430366400000,
+        "descriptions": [
+          "Project lead and architect for ad-hoc reporting scheduler and data dictionary project, serving over 2000 customers with over 1TB of data being reported",
+          "Co-wrote version 2 of ad-hoc reporting system with another developer",
+          "Optimized memory usage of ad-hoc reporting system, cut down its memory usage by more than 30%",
+          "Mentored 2 junior members within the team",
+          "Technologies used: C#, .NET, SQL, HTML, CSS, and JavaScript"
+        ]
+      },
+      {
+        "id":2,
+        "organizationName": "Camilion Solutions Incorporated",
+        "title": "Technical Consultant",
+        "location": "Markham, ON, Canada",
+        "from": 1346472000000,
+        "to": 1356930000000,
+        "descriptions": [
+          "Evaluation: Excellent",
+          "Applied strong communication, planning, and problem solving skills to provide insurance solution to clients using J2EE, Spring Framework, and SQL",
+          "Led the team to optimize their form creation process, cut their form creation process by over 100 hours",
+          "Technologies used: Java, J2EE, and SQL"
+        ]
+      },
+      {
+        "id":3,
+        "organizationName": "Qualcomm Incorporated",
+        "title": "Multimedia Systems Designer and Architect",
+        "location": "Markham, ON, Canada",
+        "from": 1314849600000,
+        "to": 1325307600000,
+        "descriptions": [
+          "Evaluation: Excellent",
+          "Applied creativity and prior knowledge of hardware design to optimize simulation by 250% with SVA included",
+          "Used C to create highly flexible and maintainable hardware specifications for over 100 architects to use, reduced their delay by 2 weeks",
+          "Technologies used: C, Perl, and SystemVerilog"
+        ]
+      },
+      {
+        "id": 4,
+        "organizationName": "Qualcomm Incorporated",
+        "title": "Software Development Engineer",
+        "location": "Boulder, CO, USA",
+        "from": 1293858000000,
+        "to": 1304136000000,
+        "descriptions": [
+          "Evaluation: Excellent",
+          "Used previous knowledge of designing, implementation, and testing to improve performance of an embedded software module on a modem chipset by 30% and memory saving by 65%",
+          "Created different test cases in C++ to test new implementations including test cases for multi-threading, race conditions, and stack overflow",
+          "Technologies used: C, C++, and Python"
+        ]
+      },
+      {
+        "id": 5,
+        "organizationName": "Infinidy Corporation",
+        "title": "Software Engineer",
+        "location": "Waterloo, ON, Canada",
+        "from": 1272686400000,
+        "to": 1283227200000,
+        "descriptions": [
+          "Evaluation: Excellent",
+          "Fulfilled the most important role to create a highly efficient and flexible iPhone social networking application using Objective-C and Cocoa-Touch framework",
+          "Created an internal UI library by extending Cocoa-Touch Framework",
+          "Technologies used: Objective-C"
+        ]
+      },
+      {
+        "id": 6,
+        "organizationName": "Research In Motion (BlackBerry)",
+        "title": "Application Developer",
+        "location": "Mississauga, ON, Canada",
+        "from": 1230786000000,
+        "to": 1262235600000,
+        "descriptions": [
+          "Evaluation: Very good",
+          "Used  Visual C++(MFC) to develop and create user friendly interface and engine for BlackBerry Theme Studio including SVG Matrix import, application icons hierarchy, and image reload",
+          "Suggested new ideas that could be investigated and implemented in the future on both BlackBerry devices and BlackBerry Theme Studio",
+          "Solved defects in BlackBerry Theme Studio with attention to usability and flexibility",
+          "Organized events in a team as a RCSC Building Representative for over 100 co-op students",
+          "Technologies used: C++ and SVG"
+        ]
+      }
+    ],
+    "projects": [
+      {
+        "id":1,
+        "name": "JSON Library",
+        "from": 1354338000000,
+        "to": 1361595600000,
+        "imageURL": "http://mduan.com/static/img/thumbnail_photomap.png",
+        "descriptions": [
+          "Created a JSON Library for Java with emphasis on ease to use and ability to customize",
+          "Users can serialize their Java objects to JSON string with as few as one line by using this JSON Library"
+        ]
+      },
+      {
+        "id":2,
+        "name": "Alloy Visualizer with Professor Derek Rayside",
+        "websiteURL": "http://alloy.mit.edu/",
+        "from": 1346472000000,
+        "to": 1364788800000,
+        "imageURL": "http://mduan.com/static/img/thumbnail_photomap.png",
+        "descriptions": [
+          "Researched and created new algorithms to draw recurrent hierarchies on Alloy including Sugiyama layout and Circular layout, reduced edge crossing for some graphs to zero"
+        ]
+      },
+      {
+        "id":3,
+        "name": "RTX",
+        "from": 1304222400000,
+        "to": 1314763200000,
+        "imageURL": "http://mduan.com/static/img/thumbnail_photomap.png",
+        "descriptions": [
+          "Developed an operating system in C and Assembly, which has features including memory management, processor management, inter-process communication, and time management"
+        ]
+      },
+      {
+        "id":4,
+        "name": "Compiler Course Project Designer with Professor Derek Rayside",
+        "from": 1293858000000,
+        "to": 1325307600000,
+        "imageURL": "http://mduan.com/static/img/thumbnail_photomap.png",
+        "descriptions": [
+          "Related different compiler creation techniques learned to create simulator and synthesizer for  a language which is a subset of VHDL using Java, used by over 500 students"
+        ]
+      }
+    ],
+    "educations": [
+      {
+        "id":1,
+        "degreeName": "Bachelor of Applied Science, Computer Engineering",
+        "institutionName": "University of Waterloo",
+        "from": 1220241600000,
+        "to": 1367294400000,
+        "descriptions": [
+          "Honours: Graduated with Distinction, Top 15 of the class in 4th year",
+          "Cumulative GPA: 3.6/4"
+        ]
+      }
+    ]
+  }
+}

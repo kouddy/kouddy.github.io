@@ -3,13 +3,18 @@
     padding: 0 5px;
   }
 
+  a {
+    color: black;
+  }
+
   .resumeHeader {
     text-align: center;
     border-bottom: 1px solid #ddd;
     box-shadow: 0 4px 2px -2px #ddd;
 
-    .contactMethod {
-      padding: 0 30px;
+    .contactMethods {
+      display: flex;
+      justify-content: space-around;
     }
   }
 
@@ -39,6 +44,11 @@
       }
     }
 
+    .location {
+      color: #aaa;
+      padding: 0 5px;
+    }
+
     .resumeQuotes {
       text-align: center;
 
@@ -47,8 +57,8 @@
           font-style: italic;
           padding: 0 5px;
         }
-        .name {
-          padding-left: 5px
+        .restOfQuote {
+          padding: 0 5px;
         }
       }
     }
@@ -81,10 +91,6 @@
           .name {
             font-weight: bold;
             padding: 0 5px;
-
-            a {
-              color: black;
-            }
           }
         }
 

@@ -36,10 +36,13 @@ class ResumeWorkExperience extends React.Component {
             <span className="organizationName">{this.props.experience.organizationName}</span>
             <span className="title">{this.props.experience.title}</span>
           </div>
-          <div className="timeSpan">
-            <span className="from">{moment(this.props.experience.from).format('MMM YYYY')}</span>
-            -
-            <span className="to">{this.props.experience.to ? moment(this.props.experience.to).format('MMM YYYY') : "Present"}</span>
+          <div>
+            <div className="location">{this.props.experience.location}</div>
+            <div className="timeSpan">
+              <span className="from">{moment(this.props.experience.from).format('MMM YYYY')}</span>
+              -
+              <span className="to">{this.props.experience.to ? moment(this.props.experience.to).format('MMM YYYY') : "Present"}</span>
+            </div>
           </div>
         </div>
         {descriptions.length > 0 ? <ul className="descriptions">{descriptions}</ul> : ""}

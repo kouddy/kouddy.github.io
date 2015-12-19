@@ -23,6 +23,11 @@ var common = {
                 loader: 'source-map'
         }],
         loaders: [{
+                test: /\.json?$/,
+                include: PATHS.app,
+                loaders: ['json-loader']
+          },
+          {
                 test: /\.(jpe?g|png|gif|svg)$/i,
                 include: PATHS.app,
                 loaders: [
