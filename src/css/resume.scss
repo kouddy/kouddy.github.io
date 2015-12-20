@@ -1,6 +1,9 @@
 .resume {
   i {
     padding: 0 5px;
+    @media print {
+      display: none;
+    }
   }
 
   a {
@@ -22,6 +25,9 @@
     .section {
       padding: 10px 15px;
       border-bottom: 1px dashed #ccc;
+      @media print {
+        border-bottom: 0px;
+      }
 
       .sectionTitle {
         font-size: 1.5em;
@@ -98,6 +104,9 @@
             flex: 0 0 auto;
             width: 40%;
             max-width: 500px;
+            @media print {
+              display: none;
+            }
 
             img {
               width: 100%

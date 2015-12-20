@@ -5,6 +5,9 @@ import createBrowserHistory from 'history/lib/createBrowserHistory';
 
 import Resume from './components/Resume.jsx';
 
+import AltContainer from 'alt-container';
+import ResumeStore from './stores/ResumeStore';
+
 export default class App extends React.Component {
   render() {
     return (
@@ -20,10 +23,22 @@ export default class App extends React.Component {
   }
 }
 
+class ResumeViewHolder extends React.Component {
+  render() {
+    return (
+        <AltContainer stores={[ResumeStore]} inject={{
+          resume: () => ResumeStore.getState().resume
+        }}>
+        <Resume />
+      </AltContainer>
+    )
+  }
+}
+
 ReactDOM.render((
   <Router>
     <Route path="/" component={App}>
-      <Route path="/resume" component={Resume} />
+      <Route path="/resume" component={ResumeViewHolder} />
     </Route>
   </Router>
  ), document.getElementById("container"));
