@@ -3,22 +3,22 @@
     "name": "Jiantong (David) Gao",
     "contactMethods": [
       {
-        "id":1,
+        "id": 1,
         "type": "CONTACT_METHOD_EMAIL",
         "value": "jtgao20@gmail.com",
-        "URL": "mailto:jtgao20@gmail.com"
+        "url": "mailto:jtgao20@gmail.com"
       },
       {
-        "id":2,
+        "id": 2,
         "type": "CONTACT_METHOD_WEBSITE_PERSONAL",
         "value": "kouddy.github.com",
-        "URL": "http://kouddy.github.com"
+        "url": "http://kouddy.github.com"
       },
       {
-        "id":3,
+        "id": 3,
         "type": "CONTACT_METHOD_WEBSITE_GITHUB",
         "value": "github.com/kouddy",
-        "URL": "http://www.github.com/kouddy"
+        "url": "http://www.github.com/kouddy"
       }
     ]
   },
@@ -132,6 +132,7 @@
         "name": "JSON Library",
         "from": 1354338000000,
         "to": 1361595600000,
+        "imageURL": "/static/project_json.png",
         "descriptions": [
           "Created a JSON Library for Java with emphasis on ease to use and ability to customize",
           "Users can serialize their Java objects to JSON string with as few as one line by using this JSON Library"

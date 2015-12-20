@@ -8,10 +8,17 @@ import resumeJSON from '../assets/resume.json';
 
 export default class Resume extends React.Component {
   static propTypes = {
-    resume: React.PropTypes.object.isRequired
+    resume: React.PropTypes.shape({
+      header: React.PropTypes.object,
+      body: React.PropTypes.object
+    })
   };
 
   render() {
+    // if (!this.props.resume) {
+    //   return <div></div>
+    // }
+
     var resume = resumeJSON;
     return (
       <div className="resume">

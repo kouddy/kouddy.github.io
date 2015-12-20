@@ -6,16 +6,25 @@ import ResumeEducations from './ResumeEducations.jsx';
 
 export default class ResumeBody extends React.Component {
   static propTypes = {
-    body: React.PropTypes.object.isRequired
+    body: React.PropTypes.shape({
+      quotes: React.PropTypes.array,
+      workExperiences: React.PropTypes.array,
+      projects: React.PropTypes.array,
+      educations: React.PropTypes.array
+    })
   };
 
   render() {
+    if (!this.props.body) {
+      return <div></div>
+    }
+
     return(
       <div className="resumeBody">
-        {this.props.body.quotes ? <ResumeQuotes quotes={this.props.body.quotes} /> : ""}
-        {this.props.body.workExperiences ? <ResumeWorkExperiences experiences={this.props.body.workExperiences} /> : ""}
-        {this.props.body.projects ? <ResumeProjects projects={this.props.body.projects} /> : ""}
-        {this.props.body.educations ? <ResumeEducations educations={this.props.body.educations} /> : ""}
+        <ResumeQuotes quotes={this.props.body.quotes} />
+        <ResumeWorkExperiences experiences={this.props.body.workExperiences} />
+        <ResumeProjects projects={this.props.body.projects} />
+        <ResumeEducations educations={this.props.body.educations} />
       </div>
     )
   }
