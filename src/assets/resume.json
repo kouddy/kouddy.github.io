@@ -38,6 +38,30 @@
         "organizationName": "Qualcomm Inc."
       }
     ],
+    "skills" : [
+        {
+          "id": 1,
+          "groupName": "Languages",
+          "skills": [
+            {
+              "id": 1,
+              "name": "C#"
+            },
+            {
+              "id": 2,
+              "name": "Java"
+            }]
+        },
+        {
+          "id": 2,
+          "groupName": "Tools",
+          "skills": [
+            {
+              "id": 1,
+              "name": "Vim"
+            }]
+        }
+    ],
     "workExperiences": [
       {
         "id":1,
@@ -52,7 +76,8 @@
           "Optimized memory usage of ad-hoc reporting system, cut down its memory usage by more than 30%",
           "Mentored 2 junior members within the team",
           "Technologies used: C#, .NET, SQL, HTML, CSS, and JavaScript"
-        ]
+        ],
+        "skills": ["C#", ".NET", "SQL", "HTML", "CSS", "JavaScript"]
       },
       {
         "id":2,
@@ -66,7 +91,8 @@
           "Applied strong communication, planning, and problem solving skills to provide insurance solution to clients using J2EE, Spring Framework, and SQL",
           "Led the team to optimize their form creation process, cut their form creation process by over 100 hours",
           "Technologies used: Java, J2EE, and SQL"
-        ]
+        ],
+        "skills": ["Java", "J2EE", "SQL"]
       },
       {
         "id":3,
@@ -80,7 +106,8 @@
           "Applied creativity and prior knowledge of hardware design to optimize simulation by 250% with SVA included",
           "Used C to create highly flexible and maintainable hardware specifications for over 100 architects to use, reduced their delay by 2 weeks",
           "Technologies used: C, Perl, and SystemVerilog"
-        ]
+        ],
+        "skills": ["C", "Perl", "SystemVerilog"]
       },
       {
         "id": 4,
@@ -94,7 +121,8 @@
           "Used previous knowledge of designing, implementation, and testing to improve performance of an embedded software module on a modem chipset by 30% and memory saving by 65%",
           "Created different test cases in C++ to test new implementations including test cases for multi-threading, race conditions, and stack overflow",
           "Technologies used: C, C++, and Python"
-        ]
+        ],
+        "skills": ["C", "C++", "Python"]
       },
       {
         "id": 5,
@@ -108,7 +136,8 @@
           "Fulfilled the most important role to create a highly efficient and flexible iPhone social networking application using Objective-C and Cocoa-Touch framework",
           "Created an internal UI library by extending Cocoa-Touch Framework",
           "Technologies used: Objective-C"
-        ]
+        ],
+        "skills": ["Objective-C"]
       },
       {
         "id": 6,
@@ -124,7 +153,8 @@
           "Solved defects in BlackBerry Theme Studio with attention to usability and flexibility",
           "Organized events in a team as a RCSC Building Representative for over 100 co-op students",
           "Technologies used: C++ and SVG"
-        ]
+        ],
+        "skills": ["C++", "SVG"]
       }
     ],
     "projects": [
@@ -137,7 +167,8 @@
         "descriptions": [
           "Created a JSON Library for Java with emphasis on ease to use and ability to customize",
           "Users can serialize their Java objects to JSON string with as few as one line by using this JSON Library"
-        ]
+        ],
+        "skills": ["Java"]
       },
       {
         "id":2,
@@ -147,7 +178,8 @@
         "to": 1364788800000,
         "descriptions": [
           "Researched and created new algorithms to draw recurrent hierarchies on Alloy including Sugiyama layout and Circular layout, reduced edge crossing for some graphs to zero"
-        ]
+        ],
+        "skills": ["Java"]
       },
       {
         "id":3,
@@ -156,7 +188,8 @@
         "to": 1314763200000,
         "descriptions": [
           "Developed an operating system in C and Assembly, which has features including memory management, processor management, inter-process communication, and time management"
-        ]
+        ],
+        "skills": ["C", "Assembly"]
       },
       {
         "id":4,
@@ -167,7 +200,8 @@
         "imageURL": "/static/project_compiler.png",
         "descriptions": [
           "Related different compiler creation techniques learned to create simulator and synthesizer for  a language which is a subset of VHDL using Java, used by over 500 students"
-        ]
+        ],
+        "skills": ["Java", "VHDL"]
       }
     ],
     "educations": [

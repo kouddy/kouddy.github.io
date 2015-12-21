@@ -72,6 +72,22 @@
       }
     }
 
+    .resumeSkills {
+      .resumeGroupedSkills {
+        ul.skills {
+          list-style: none;
+
+          .resumeSkill {
+            display: inline-block;
+            padding: 0 5px;
+            border: 1px solid #aaa;
+            border-radius: 5px;
+            margin: 0 5px;
+          }
+        }
+      }
+    }
+
     .resumeWorkExperiences {
       .resumeWorkExperience {
         .header {
