@@ -2,6 +2,7 @@ var path = require('path');
 var webpack = require('webpack');
 var merge = require('webpack-merge');
 var pkg = require('./package.json');
+var HtmlwebpackPlugin = require('html-webpack-plugin');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 const TARGET = process.env.npm_lifecycle_event;
@@ -39,7 +40,14 @@ var common = {
                 include: PATHS.app,
                 loader: 'babel'
         }]
-    }
+    },
+    plugins: [
+      new HtmlwebpackPlugin({
+        title: 'Website of David',
+        template: 'index.html',
+        inject: 'body'
+      })
+    ]
 };
 
 /* Development only settings. */
@@ -79,12 +87,13 @@ if (TARGET === 'build' || TARGET === 'stats') {
     output: {
       path: PATHS.build,
       filename: '[name].[chunkhash].js',
-      chunkFilename: '[chunkhash].js'
+      chunkFilename: '[chunkhash].js',
+      publicPath: './build'
     },
     module: {
       loaders: [{
           test: /\.scss$/,
-          loader: ExtractTextPlugin.extract('style', 'css', 'autoprefixer?browsers=last 3 versions', 'sass?outputStyle=expanded'),
+          loader: ExtractTextPlugin.extract('style', 'css!sass?outputStyle=expanded', 'autoprefixer?browsers=last 3 versions', 'sass?outputStyle=expanded'),
           include: PATHS.app
       }]
     },

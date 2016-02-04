@@ -6,6 +6,7 @@ import createBrowserHistory from 'history/lib/createBrowserHistory';
 import Resume from './components/Resume.jsx';
 
 import AltContainer from 'alt-container';
+import ResumeActions from './actions/ResumeActions';
 import ResumeStore from './stores/ResumeStore';
 
 export default class App extends React.Component {
@@ -23,6 +24,8 @@ export default class App extends React.Component {
   }
 }
 
+ResumeActions.getById(1);
+
 class ResumeViewHolder extends React.Component {
   render() {
     return (
@@ -35,10 +38,14 @@ class ResumeViewHolder extends React.Component {
   }
 }
 
+console.log("test");
+const div = document.createElement('div');
+document.body.appendChild(div);
+
 ReactDOM.render((
   <Router>
     <Route path="/" component={App}>
       <Route path="/resume" component={ResumeViewHolder} />
     </Route>
   </Router>
- ), document.getElementById("container"));
+ ), div);
